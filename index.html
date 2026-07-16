@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Prateek | Portfolio</title>
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap' rel='stylesheet'>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+  <header>
+    <nav class='navbar'>
+      <div class='brand'>
+        <div class='logo'>Prateek</div>
+        <div class='brand-tag'>AI · ML · Web</div>
+      </div>
+      <button class='menu' aria-label='Toggle navigation' aria-expanded='false'>☰</button>
+      <ul class='nav-links'>
+        <li><a href='#home'>Home</a></li>
+        <li><a href='#about'>About</a></li>
+        <li><a href='#skills'>Skills</a></li>
+        <li><a href='#projects'>Projects</a></li>
+        <li><a href='#contact'>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id='home' class='hero'>
+      <div class='hero-content'>
+        <p class='eyebrow'>Hello, I am</p>
+        <h1>Prateek</h1>
+        <p class='hero-copy'>Aspiring AI & ML Engineer building elegant web experiences and intelligent solutions.</p>
+        <div class='hero-actions'>
+          <a href='#projects' class='btn primary'>View Projects</a>
+          <a href='#contact' class='btn secondary'>Get in Touch</a>
+        </div>
+      </div>
+      <div class='hero-panel'>
+        <div class='panel-card'>
+          <p class='panel-value'>5+</p>
+          <p class='panel-label'>Projects Completed</p>
+        </div>
+        <div class='panel-card'>
+          <p class='panel-value'>AI</p>
+          <p class='panel-label'>Machine Learning</p>
+        </div>
+        <div class='panel-card'>
+          <p class='panel-value'>Web</p>
+          <p class='panel-label'>Front-End Design</p>
+        </div>
+      </div>
+    </section>
+
+    <section id='about' class='section-card'>
+      <div class='section-header'>
+        <h2>About Me</h2>
+        <p>I am a passionate Computer Science student focused on Artificial Intelligence, Machine Learning, and web development. I enjoy solving problems, building modern interfaces, and turning ideas into polished products.</p>
+      </div>
+      <div class='about-grid'>
+        <div class='about-card'>
+          <h3>Who I Am</h3>
+          <p>Curious learner and collaborative teammate with a strong foundation in Python, JavaScript, and data-driven systems.</p>
+        </div>
+        <div class='about-card'>
+          <h3>What I Build</h3>
+          <p>Responsive websites, intelligent prototypes, and polished user experiences that combine design and functionality.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id='skills' class='section-card'>
+      <div class='section-header'>
+        <h2>Skills</h2>
+        <p>Technologies and tools that I use to build clean, performant projects.</p>
+      </div>
+      <div class='skill-box'>
+        <span class='skill-pill'>HTML</span>
+        <span class='skill-pill'>CSS</span>
+        <span class='skill-pill'>JavaScript</span>
+        <span class='skill-pill'>Python</span>
+        <span class='skill-pill'>C++</span>
+        <span class='skill-pill'>Machine Learning</span>
+        <span class='skill-pill'>TensorFlow</span>
+        <span class='skill-pill'>React</span>
+      </div>
+    </section>
+
+    <section id='projects' class='section-card'>
+      <div class='section-header'>
+        <h2>Projects</h2>
+        <p>Selected work that shows my ability to ship thoughtful, user-friendly solutions.</p>
+      </div>
+      <div class='project-grid'>
+        <article class='project-card'>
+          <h3>Portfolio Website</h3>
+          <p>Responsive portfolio built with HTML, CSS, and JavaScript to showcase projects and contact details.</p>
+        </article>
+        <article class='project-card'>
+          <h3>Student Management System</h3>
+          <p>Java application for tracking student records, attendance, and academic performance.</p>
+        </article>
+        <article class='project-card'>
+          <h3>AI Chatbot</h3>
+          <p>Conversational chatbot built with Python and NLP concepts to respond intelligently to user queries.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id='contact' class='section-card contact-section'>
+      <div class='section-header'>
+        <h2>Contact Me</h2>
+        <p>Have a project idea or want to collaborate? Send a message and I will reply soon.</p>
+      </div>
+      <form id='contactForm' class='contact-form'>
+        <div class='form-row'>
+          <input type='text' id='name' placeholder='Your Name' autocomplete='name'>
+          <input type='email' id='email' placeholder='Your Email' autocomplete='email'>
+        </div>
+        <textarea id='message' placeholder='Your Message' rows='6'></textarea>
+        <button type='submit' class='btn primary'>Send Message</button>
+        <p id='success' class='success-message'></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Prateek. Crafted with creativity and code.</p>
+  </footer>
+  <script src='script.js'></script>
+</body>
+</html>
